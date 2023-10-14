@@ -1,19 +1,22 @@
 .navigation {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-transform: uppercase;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-transform: uppercase;
+	position: sticky;
+	background-color: transparent;
 }
 
 .nav-list {
-    list-style-type: none;
-    display: flex;
+	list-style-type: none;
+	display: flex;
 }
 
 .nav-link {
-    margin-left: 20px;
-    color: #fff;
-
+	margin-left: 20px;
+	color: #aaa;
+	font-size: 24px;
+	font-weight: 300;
 }

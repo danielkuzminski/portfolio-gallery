@@ -1,10 +1,13 @@
 //styles
 import './Home.css'
 
+//assets
+import Ja from '../assets/ja.jpg'
+
 export default function Home() {
   return (
     <div>
-      <p>home</p>
+      <img className='my-picture' src={Ja} alt="" />
     </div>
   )
 }
