@@ -10,21 +10,12 @@
 	overflow: hidden;
 }
 
-.logo-container {
-	/* flex: 3; */
-}
-
 /* hamburger menu */
 .hamburger {
-	/* flex: 1; */
 	width: 3rem;
 	height: 3rem;
 	border-left: 1px solid #fff;
 	display: flex;
-	/* padding: 5px; */
-	/* border-radius: 5px; */
-	/* flex-direction: row; */
-	/* flex-wrap: nowrap; */
 	align-items: center;
 	justify-content: center;
 	position: fixed;
@@ -32,7 +23,6 @@
 	right: 20px;
 	cursor: pointer;
 	overflow: hidden;
-	z-index: 10;
 }
 
 .bar {
@@ -58,8 +48,7 @@
 	width: 3rem;
 	height: 3rem;
 	border-left: 1px solid #fff;
-	display: flex;
-	
+	display: flex;	
 	align-items: center;
 	justify-content: center;
 	position: fixed;
@@ -67,16 +56,7 @@
 	right: 20px;
 	cursor: pointer;
 	overflow: hidden;
-	z-index: 10;
-}
-
-.bar {
-	position: absolute;
-	display: block;
-	width: 60%;
-	background-color: #fff;
-	height: 1px;
-	transition: .5s ease-out;
+	/* z-index: 10; */
 }
 
 .hamburger2 .bar:nth-child(1) {
@@ -98,7 +78,6 @@
 /* logo */
 
 .logo {
-	/* margin-left: 20px; */
 	color: transparent;
 	font-size: 2.8rem;
 	font-weight: 700;
@@ -107,29 +86,31 @@
 }
 
 .nav-links-container {
-	/* padding: 10px; */
-	/* border-bottom: 1px solid #fff ; */
-	/* flex: 5; */
+	overflow: hidden;
 }
 
 .nav-list {
 	transition: 1s;
 	list-style-type: none;
 	display: flex;
-	
 }
 
 .hidden {
 	transition: 1s;
 	list-style-type: none;
 	display: flex;
-	transform: translateX(200%);
+
+/* two options to animate menu */
+	/* sliding from right */
+	/* transform: translateX(200%); */
+
+	/* shrinking and growing */
+	transform: scale(0);
 }
 
 .hidden .nav-link {
 	color: transparent;
 	transition: .5s;
-	z-index: -11111;
 }
 
 .nav-link {
