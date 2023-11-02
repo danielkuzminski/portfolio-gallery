@@ -14,7 +14,7 @@
 .hamburger {
 	width: 3rem;
 	height: 3rem;
-	border-left: 1px solid #fff;
+	border-left: 1px solid #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,7 +29,7 @@
 	position: absolute;
 	display: block;
 	width: 60%;
-	background-color: #fff;
+	background-color: #000;
 	height: 1px;
 	transition: .5s ease-out;
 }
@@ -47,7 +47,7 @@
 .hamburger2 {
 	width: 3rem;
 	height: 3rem;
-	border-left: 1px solid #fff;
+	border-left: 1px solid #000;
 	display: flex;	
 	align-items: center;
 	justify-content: center;
@@ -82,7 +82,7 @@
 	font-size: 2.8rem;
 	font-weight: 700;
 	font-style: italic;
-	-webkit-text-stroke: 1px  #fff;
+	-webkit-text-stroke: 1px  #000;
 }
 
 .nav-links-container {
@@ -102,10 +102,10 @@
 
 /* two options to animate menu */
 	/* sliding from right */
-	/* transform: translateX(200%); */
+	transform: translateX(200%);
 
 	/* shrinking and growing */
-	transform: scale(0);
+	/* transform: scale(0); */
 }
 
 .hidden .nav-link {
@@ -115,7 +115,7 @@
 
 .nav-link {
 	margin-left: 20px;
-	color: #fff;
+	color:#000;
 	font-size: 24px;
 	font-weight: 300;
 }

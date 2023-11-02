@@ -4,29 +4,34 @@ import "./Home.css"
 //router
 import { Link } from "react-router-dom"
 
+//assets
+import pic1 from '../assets/1690188464493.jpg'
+import pic2 from '../assets/1690150138770.jpg'
+import pic3 from '../assets/1690188464058.jpg'
 
 
 export default function Home() {
 	return (
 		<div className='home-container'>
-			{/* <div className='home-container-box box-1'>
-				<Link className="box-title" to='/gallery'>
-					<h2>galeria</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, ex?</p>
-				</Link>
+			<div className="hero">
+				<div className="intro">
+					<h1 className="intro-title">
+						Lorem ipsum <span className="highlighted">dolor</span>
+					</h1>
+					<p className="intro-text">
+						Lorem ipsum dolor sit amet <span className="highlighted">consectetur</span> adipisicing elit. Assumenda nostrum quidem ad, quia itaque nemo.
+					</p>
+					<Link to='/gallery'>
+						<button className="cta">check</button>
+					
+					</Link>
+				</div>
+				<div className="wallpaper">
+					<img className="wallpaper-pic pic1" src={pic1} alt="malta city" />
+					<img className="wallpaper-pic pic2" src={pic2} alt="malta city" />
+					<img className="wallpaper-pic pic3" src={pic3} alt="malta city" />
+				</div>
 			</div>
-			<div className='home-container-box box-2'>
-				<Link className="box-title">
-					<h2>miejsca</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, ex?</p>
-				</Link>
-			</div>
-			<div className='home-container-box box-3'>
-				<Link className="box-title" to='/about'>
-					<h2>o mnie</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, ex?</p>
-				</Link>
-			</div> */}
 		</div>
 	)
 }
